@@ -1,0 +1,14 @@
+
+{
+    "name"         : "node-red-contrib-source-web",
+    "version"      : "0.0.1",
+    "description"  : "source web for node-red",
+    "dependencies": { "硬盘资源暴露在WEB"
+    },
+    "keywords": [ "node-red" ],
+    "node-red"     : {
+        "nodes": {
+            "source-web": "source-web.js"
+        }
+    }
+}
