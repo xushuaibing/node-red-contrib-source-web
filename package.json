@@ -1,33 +1,61 @@
 {
-  "name": "node-red-contrib-source-web",
-  "version": "0.0.4",
-  "description": "source web for node-red",
+  "_from": "node-red-contrib-source-web@0.0.6",
+  "_id": "node-red-contrib-source-web@0.0.6",
+  "_inBundle": false,
+  "_integrity": "sha512-VVudFASkh7feFmzFMjL/IzbzSw8+ffnGnJdV9K03fMo5qGRo9JoDW1LJJQP0zc8RHZ1PZSdQA3Pb6tTX3nL90g==",
+  "_location": "/node-red-contrib-source-web",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-source-web@0.0.6",
+    "name": "node-red-contrib-source-web",
+    "escapedName": "node-red-contrib-source-web",
+    "rawSpec": "0.0.6",
+    "saveSpec": null,
+    "fetchSpec": "0.0.6"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-source-web/-/node-red-contrib-source-web-0.0.6.tgz",
+  "_shasum": "6856fe396de24854b0a37939003d1f8147d89e99",
+  "_spec": "node-red-contrib-source-web@0.0.6",
+  "_where": "/data",
+  "author": {
+    "name": "xushuaibing"
+  },
+  "bugs": {
+    "url": "https://github.com/xushuaibing/node-red-contrib-source-web/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "fs": "0.0.1-security"
   },
+  "deprecated": false,
+  "description": "source web for node-red",
+  "homepage": "https://github.com/xushuaibing/node-red-contrib-source-web#readme",
   "keywords": [
     "node-red"
   ],
+  "license": "ISC",
+  "main": "source-web.js",
+  "name": "node-red-contrib-source-web",
   "node-red": {
     "nodes": {
       "source-web": "source-web.js",
       "web-config": "web-config.js"
     }
   },
-  "main": "source-web.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "xushuaibing",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xushuaibing/node-red-contrib-source-web.git"
   },
-  "bugs": {
-    "url": "https://github.com/xushuaibing/node-red-contrib-source-web/issues"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/xushuaibing/node-red-contrib-source-web#readme"
+  "version": "0.0.6"
 }
