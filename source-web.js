@@ -14,7 +14,7 @@ module.exports = RED => {
       var historyurl = '';
       fs.readdir(path,function (err,files){
         if(err){
-          return console.log('folder is not exist!');
+          return node.log('folder is not exist!');
         }
         app.use(session({
             //session的秘钥，防止session劫持。 这个秘钥会被循环使用，秘钥越长，数量越多，破解难度越高。
