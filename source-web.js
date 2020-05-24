@@ -24,17 +24,17 @@ module.exports = RED => {
             //可以改变浏览器cookie的名字
             saveUninitialized: true,
             cookie:{
-                maxAge: 1000*60*60*24 // default session expiration is set to 1 hour
+                maxAge: 1000*60*60*24 // default session expiration is set to 24 hour
             }
         }));
         /*拦截器*/
-        app.use(function (req, res, next) {     
+        app.use(function (req, res, next) {    
             if(conf_psd == null || conf_psd == ''){
-              next();
-            }  
+              return next();
+            }             
             if (req.session.login==1) {
                 //用户登录过
-                next();
+                return next();
             } else {
                 //解析用户请求路径
                 var arr = req.url.split('/');            
@@ -45,8 +45,9 @@ module.exports = RED => {
 
                 if (arr.length > 1) {                    
                     if (arr[1] == 'checkLogin' || arr[1] == 'favicon.ico') {                   
-                        next();
-                    } else {
+                        return next();
+                    }
+                    else {
                         historyurl = req.url;                    
                         res.sendFile( __dirname + "/password.html" );  // 将用户重定向到登录页面                        
                     }
@@ -57,7 +58,7 @@ module.exports = RED => {
             var password = req.query.password;             
             if(password == conf_psd){
                 req.session.login = '1';
-                res.redirect(historyurl);            
+                return res.redirect(historyurl);            
             }else {
                 res.send('验证失败!');
             }
