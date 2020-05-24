@@ -2,7 +2,11 @@
   "name": "node-red-contrib-source-web",
   "version": "0.0.4",
   "description": "source web for node-red",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security"
+  },
   "keywords": [
     "node-red"
   ],
@@ -18,8 +22,12 @@
   },
   "author": "xushuaibing",
   "license": "ISC",
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/xushuaibing/node-red-contrib-source-web.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/xushuaibing/node-red-contrib-source-web/issues"
+  },
+  "homepage": "https://github.com/xushuaibing/node-red-contrib-source-web#readme"
 }

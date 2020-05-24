@@ -15,6 +15,9 @@ RED.nodes.registerType('web-config', {
     path: {
       value: '',
       required: true
+    },
+    pwd: {
+      value: ''
     }
   }
 })
@@ -25,12 +28,16 @@ RED.nodes.registerType('web-config', {
       <input type="text" id="node-config-input-name" placeholder="默认配置">
     </div>
     <div class="form-row">
-      <label for="node-config-input-port"><i></i>Port</label>
+      <label for="node-config-input-port"><i></i>暴露端口</label>
       <input type="text" id="node-config-input-port" placeholder="本服务端口">
     </div>
     <div class="form-row">
-      <label for="node-config-input-path"><i></i>Corpid</label>
+      <label for="node-config-input-path"><i></i>暴露路径</label>
       <input type="text" id="node-config-input-path" placeholder="文件路径">
+    </div>
+    <div class="form-row">
+      <label for="node-config-input-pwd"><i></i>访问密码</label>
+      <input type="text" id="node-config-input-pwd" placeholder="访问密码">
     </div>
     
   </script>
